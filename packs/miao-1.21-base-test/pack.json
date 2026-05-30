@@ -2,11 +2,11 @@
   "pack_format": "miao:1.0.0",
   "id": "miao-1.21-base-test",
   "display_name": "米奇喵 1.21 基础测试整合包",
-  "version": "0.1.0",
-  "summary": "MMCL Phase 1 fixture: Sodium + Fabric API + REI",
-  "description": "This is a minimal modpack used as a fixture during MMCL Phase 1 implementation of the modpack source ecosystem. It is NOT the final '米奇喵 基础美化包'. See https://github.com/WangSimiao2000/MiaoMinecraftLauncher/blob/main/docs/modpack-source-phase1-spec.md for the design spec.",
+  "version": "0.2.0",
+  "summary": "MMCL Phase 1 fixture: Sodium + Fabric API + REI + Indium (Pending fixture)",
+  "description": "This is a minimal modpack used as a fixture during MMCL Phase 1 implementation of the modpack source ecosystem. It is NOT the final '米奇喵 基础美化包'. See https://github.com/WangSimiao2000/MiaoMinecraftLauncher/blob/main/docs/modpack-source-phase1-spec.md for the design spec. Indium is included as a real-world Pending fixture: its author stopped updating after Sodium 1.21.2 made it redundant, so on 1.21.4/1.21.5/1.21.7 the resolver will mark it Pending while the other 3 mods install normally.",
   "loader": "fabric",
-  "mc_versions": ["1.21.4", "1.21.5"],
+  "mc_versions": ["1.21.4", "1.21.5", "1.21.7"],
   "loader_versions": {},
   "mods": [
     {
@@ -33,6 +33,16 @@
       "source": "modrinth",
       "id": "nfn13YXA",
       "name": "Roughly Enough Items (REI)",
+      "policy": "auto",
+      "locked_version": null,
+      "criticality": "optional",
+      "deprecated_after": null,
+      "replacement": null
+    },
+    {
+      "source": "modrinth",
+      "id": "Orvt0mRa",
+      "name": "Indium",
       "policy": "auto",
       "locked_version": null,
       "criticality": "optional",
